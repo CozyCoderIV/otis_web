@@ -1,0 +1,1152 @@
+// Variables
+$primary-color-1:#1C1C1E;
+$primary-color-2:#3A3A3C;
+$secondary-color-1:#545458;
+$secondary-color-2:#767680;
+$tertiary-color:#EBEBE5;
+
+
+// Breakpoints
+$mobile: 375px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+// Default Set-up
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body{
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: $tertiary-color;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+// App Classes
+.container{
+    width: 100%;
+    height: 100vh;
+    // border: 1px solid green;
+}
+// App ID's
+
+
+// Route Classes
+.navbar{
+    z-index: 3;
+    width: 100%;
+    height: 5.5ch;
+    border: 1px solid black;
+    display: flex;
+    background: linear-gradient(to top, $primary-color-1, $primary-color-2);
+    box-shadow: 0px 4px 7px $primary-color-1;
+
+    &_title{
+        z-index: 3;
+        width: 17.5%;
+        display: flex;
+        align-items: center;
+        font-size: x-large;
+        font-weight: 600;
+        gap: 15px;
+    }
+    &_links{
+        z-index: 3;
+        width: 39.3%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 40%;
+        gap: 6px;
+    }
+    &_link{
+        z-index: 3;
+        display: grid;
+        place-items: center;
+        border: 1px solid $secondary-color-2;
+        font-size: large;
+        border-radius: 5%;
+        width: (100%)/3;
+
+        color: $tertiary-color;
+        background: $secondary-color-1;
+    }
+}
+
+// Route ID's
+#f_name{
+    position: relative;
+    left: .5ch;
+}
+#l_name{
+    position: relative;
+    left: .5ch;
+
+    color: $primary-color-2;
+    text-shadow: 0px 0px 7px $tertiary-color;
+}
+
+// Home Page Classes
+.home{
+    &_header{
+        width: 100%;
+        height: 30vh;
+        background-color: $primary-color-2;
+        background-image: url('../Media/Screen\ Shot\ 2022-07-19\ at\ 7.53.18\ PM.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: hidden;
+        &_c1{
+            // border: 1px solid black;
+            position: relative;
+            right: 0ch;
+            width: 50ch;
+            z-index: 1;
+        }
+
+        &_title{
+            border: 2px solid $secondary-color-2;
+            margin-top: 3ch;
+            height: 5.5ch;
+            width: 30ch;
+            display: flex;
+            align-items: center;
+            padding-left: 1ch;
+            font-size: x-large;
+            font-weight: 600;
+            background-color: rgba(252, 254, 255, 0.081);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+        &_banner{
+            border: 1px solid #3A3A3C;
+            margin-top: .2ch;
+            height: 2ch;
+            width: 45ch;
+            background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+        &_imgc{
+            position: relative;
+            // left: 30%;
+            margin-left: 57%;
+            bottom: 14.7ch;
+            width: 22ch;
+            height: 22ch;
+            border-radius: 100%;
+            object-fit: fill;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+    }
+    &_body{
+        // border: 1px solid green;
+        height: 100vh;
+        z-index: 2;
+        &_cp{
+            z-index: 2;
+            // border: 1px solid orange;
+            &_container1{
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                // border: 1px solid blue;
+                display: flex;
+                &_c1{
+                    z-index: 2;
+                    border: 1px solid $primary-color-2;
+                    height: 36ch;
+                    width: (100%)/3;
+                    background: radial-gradient(circle, rgb(22, 22, 22), $primary-color-1, $primary-color-2);
+                    &_title{
+                        border: 2px solid $primary-color-2;
+                        height: 6vh;
+                        background: $primary-color-2;
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: larger;
+                        background-color: rgba(252, 254, 255, 0.081);
+                    }
+                    &_banner{
+                        margin-top: .05ch;
+                        border: 1px solid #3A3A3C;
+                        height: 2vh;
+                        background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+                    }
+                }
+            }
+            &_details{
+                height: fit-content;
+                &_container{
+                    width: 41.7ch;
+                    margin: .5ch;
+                    height: 7ch;
+                    border: 1px solid $secondary-color-2;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1ch;
+                    background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                }
+            }
+            &_paragraph{
+                margin-left: .1ch;
+                padding-top: 2ch;
+                width: 42.5ch;
+                height: 30ch;
+                text-align: center;
+                border: 1px solid $secondary-color-2;
+                background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+    
+            }
+        }
+
+        &_container2{
+            width: 100%;
+            height: (100%)/2;
+            // border: 1px solid blue;
+            display: flex;
+            // border: 1px solid white;
+            &_c2{
+                // border: 1px solid gold;
+                border-right: 1px solid $secondary-color-1;
+                height: 100%;
+                width: (100%)/2;
+                background: radial-gradient(circle, $primary-color-1, $primary-color-2);
+                &_title{
+                    border: 2px solid $primary-color-2;
+                    height: 6vh;
+                    background: $primary-color-2;
+                    display: grid;
+                    place-items: center;
+                    font-weight: 600;
+                    font-size: larger;
+                    background-color: rgba(252, 254, 255, 0.081);
+                }
+                &_banner{
+                    margin-top: .05ch;
+                    border: 1px solid #3A3A3C;
+                    height: 2vh;
+                    background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+                }
+                &_child{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    padding-left: 1ch;
+                    gap: 9ch;
+                    top: 3ch;
+                    left: 1ch;
+                    width: 54ch;
+                    height: 8ch;
+                    border: 1px solid $secondary-color-2;
+                    margin-top: .3ch;
+                    background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                }
+                &_icons{
+                    width: 63.3ch;
+                    height: 13ch;
+                    margin-top: 5ch;
+                    margin-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    // border: 1px solid salmon;
+                    padding-left: 1ch;
+                }
+                &_icons>*{
+                    margin: 2ch;
+                    width: 8ch;
+                    height: 8ch;
+                }
+                &_techs{
+                    width: 63.3ch;
+                    height: 6ch;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    // border: 1px solid slateblue;
+                    padding-left: 1ch;
+                }
+                &_techs>*{
+                    margin: 3ch;
+                    font-size: larger;
+                }
+            }
+
+        }
+
+    }
+}
+.star_box{
+    margin-left: 11ch;
+    height: 5ch;
+    gap: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.star_box>*{
+    width: 3ch;
+    height: 3ch;
+}
+
+// Home Page ID's
+#home_img{
+    position: relative;
+    right: 24.8ch;
+    bottom: 10.25ch;
+    width: 790px;
+    height: 530px;
+}
+#header_img{
+    z-index: -1;
+    position:absolute;
+    // bottom: 20ch;
+    top: 0ch;
+    // right: 20ch;
+    width: 128.7ch;
+    height: 50ch;
+}
+#home_background{
+    position: relative;
+    bottom: 45ch;
+    width: 128.5ch;
+    height: 90ch;
+    z-index: 0;
+}
+#home_date1{
+    position: relative;
+    left: 16ch;
+}
+#home_date2{
+    position: relative;
+    left: 15.7ch;
+}
+#ec_2{
+    margin-left: 4ch;
+}
+#ec_3{
+    margin-left: 8ch;
+}
+#js_text{
+    position: relative;
+    right: 5px;
+}
+#py_text{
+    position: relative;
+    right: 24px;
+}
+#j_text{
+    position: relative;
+    right: 21px;
+}
+.pt{
+    position: relative;
+    left: 50%;
+}
+
+// Resume Page Classes
+.resume{
+    // border: 1px solid orange;
+    &_container{
+        background-image: url('../Media/StreetAlley1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // border: 1px solid orange;
+        width: 100%;
+        height: 90ch;
+
+        &_doc{
+            position: relative;
+            left: 60ch;
+            bottom: 73ch;
+            border: 3px solid #7676809d;
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+            width: 45%;
+            height: 92%;
+        }
+        &_icons{
+            position: relative;
+            top: 10ch;
+            left: 1ch;
+            width: 45%;
+            height: 75%;
+            border: 3px solid #7676809d;
+            background-color: #7676800d;
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+    }
+    &_title{
+        position: relative;
+        top: 3ch;
+        border: 2px solid $secondary-color-2;
+        // margin-top: 3ch;
+        height: 5.5ch;
+        width: 30ch;
+        display: flex;
+        align-items: center;
+        padding-left: 1ch;
+        font-size: x-large;
+        font-weight: 600;
+        background-color: rgba(252, 254, 255, 0.081);
+        box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+    }
+    &_banner{
+        position: relative;
+        top: 4.5ch;
+        border: 1px solid #3A3A3C;
+        margin-top: .2ch;
+        height: 2ch;
+        width: 45ch;
+        background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+        box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+    }
+}
+
+#resume_img{
+    width: 97%;
+    height: 98%;
+
+    margin-top: 1ch;
+    margin-left: 1ch;
+}
+#ac{
+    position: relative;
+    bottom: 5ch;
+    right: 4ch;
+    width: 40ch;
+    height: 45ch;
+    // border: 1px solid orangered;
+}
+#dpi{
+    position: relative;
+    width: 37ch;
+    height: 30ch;
+    // border: 1px solid orangered;
+}
+#gi{
+    position: relative;
+    width: 30ch;
+    height: 30ch;
+}
+#rdi{
+    position: relative;
+    width: 30ch;
+    height: 30ch;
+}
+
+#game_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon_b1{
+    position: relative;
+    margin-top: 2ch;
+    margin-left: 12ch;
+    width: 70%;
+    height: 70%;
+
+    display: grid;
+    place-items: center;
+}
+#icon_b2{
+    position: relative;
+    left: 15ch;
+    bottom: 18ch;
+    // border: 1px solid skyblue;
+    display: grid;
+    place-items: center;
+}
+#icon_b3{
+    position: relative;
+    right: 1ch;
+    bottom: 10ch;
+    // border: 1px solid yellow;
+    display: grid;
+    place-items: center;
+}
+#icon_b4{
+    position: relative;
+    bottom: 16ch;
+    right: 17ch;
+    // border: 1px solid purple;
+    display: grid;
+    place-items: center;
+}
+
+// Projects Page Classes
+.projects{
+    &_header{
+        border: 1px solid black;
+        width: 100%;
+        height: 30vh;
+        background-image: url('../Media/ChinaTown\(Night\).jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &_title{
+            border: 2px solid $secondary-color-2;
+            margin-top: 3ch;
+            height: 5.5ch;
+            width: 30ch;
+            display: flex;
+            align-items: center;
+            padding-left: 1ch;
+            font-size: x-large;
+            font-weight: 600;
+            background-color: rgba(252, 254, 255, 0.081);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+        &_banner{
+            border: 1px solid #3A3A3C;
+            margin-top: .2ch;
+            height: 2ch;
+            width: 45ch;
+            background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+        &_img{
+            position: relative;
+            left: 60%;
+            bottom: 14.3ch;
+            width: 20ch;
+            height: 20ch;
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+    }
+    &_body{
+        &_child{
+            &_container{
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                // border: 1px solid blue;
+                display: flex;
+                &_c1{
+                    z-index: 2;
+                    border: 1px solid $primary-color-2;
+                    height: 36ch;
+                    width: (100%)/3;
+                    background: radial-gradient(circle, rgb(22, 22, 22), $primary-color-1, $primary-color-2);
+                    &_title{
+                        border: 2px solid $primary-color-2;
+                        height: 6vh;
+                        background: $primary-color-2;
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: larger;
+                        background-color: rgba(252, 254, 255, 0.081);
+                    }
+                    &_banner{
+                        margin-top: .05ch;
+                        border: 1px solid #3A3A3C;
+                        height: 2vh;
+                        background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+                    }
+                }
+            }
+            &_details{
+                height: fit-content;
+                &_container{
+                    width: 41.7ch;
+                    margin: .5ch;
+                    height: 7ch;
+                    border: 1px solid $secondary-color-2;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1ch;
+                    background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                }
+            }
+            &_paragraph{
+                margin-left: .1ch;
+                padding-top: 2ch;
+                width: 42.5ch;
+                height: 30ch;
+                text-align: center;
+                border: 1px solid $secondary-color-2;
+                background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+            }
+        }
+    }
+}
+
+// Footer Classes
+.foot{
+    border-top: 1px solid black;
+    background: $primary-color-2;
+    height: 20ch;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, $primary-color-1, $primary-color-2);
+
+    &_icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: .5ch;
+        width: 40ch;
+        height: 9ch;
+        gap: 30px;
+    }
+    &_icon{
+        width: 8ch;
+        height: 8ch;
+        color: $tertiary-color;
+    }
+    &_text{
+        margin-top: 1.5ch;
+        height: 10ch;
+        &_child2{
+            position: relative;
+            left: 10ch;
+        }
+    }
+}
+// Footer ID's
+
+// Response Design (Desktop) 1200px
+@media (max-width: $desktop){}
+// Response Design (Laptop) 992px
+@media (max-width: $laptop){}
+// Response Design (Tablet) 768px
+@media (max-width: $tablet){}
+
+/*  Moz-FireFox  */
+@-moz-document url-prefix(){
+    .resume{
+        // border: 1px solid blue;
+        overflow: hidden;
+        &_container{
+            background-image: url('../Media/StreetAlley1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            // border: 1px solid green;
+            width: 100%;
+            height: 90ch;
+    
+            &_doc{
+                position: relative;
+                left: 60ch;
+                bottom: 73ch;
+                border: 3px solid #7676809d;
+                box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+                width: 45%;
+                height: 92%;
+            }
+            &_icons{
+                position: relative;
+                top: 10ch;
+                left: 1ch;
+                width: 45%;
+                height: 75%;
+                border: 3px solid #7676809d;
+                background-color: #7676800d;
+                box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+            }
+        }
+        &_title{
+            position: relative;
+            top: 3ch;
+            border: 2px solid $secondary-color-2;
+            // margin-top: 3ch;
+            height: 5.5ch;
+            width: 30ch;
+            display: flex;
+            align-items: center;
+            padding-left: 1ch;
+            font-size: x-large;
+            font-weight: 600;
+            background-color: rgba(252, 254, 255, 0.081);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+        &_banner{
+            position: relative;
+            top: 4.5ch;
+            border: 1px solid #3A3A3C;
+            margin-top: .2ch;
+            height: 2ch;
+            width: 45ch;
+            background: linear-gradient(to right, $primary-color-2, $secondary-color-1);
+            box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+        }
+    }
+}
+
+
+
+// Response Design (Mobile) 375px 414px
+@media (min-width: $mobile) and (max-width: 414px){
+    // Route Class
+    .navbar{
+        width: 100%;
+        height: 5vh;
+        &_title{
+            position: relative;
+            right: 1.5ch;
+            width: 14ch;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: medium;
+            font-weight: 600;
+            gap: 5px;
+        }
+        &_links{
+            width: 52%;
+            position: relative;
+            left: 5%;
+            gap: 3px;
+        }
+        &_link{
+            border: 1px solid $secondary-color-2;
+            border-radius: 5%;
+            width: (100%)/3;
+            font-size: small;
+        }
+    }
+    // Home Page Class
+    .home{
+        overflow-y: scroll;
+        &_header{
+            overflow: hidden;
+            width: 100%;
+            height: 10ch;
+            background-image: url('../Media/Screen\ Shot\ 2022-07-19\ at\ 7.53.18\ PM.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: $primary-color-2;
+
+            &_c1{ 
+                width: 100%;
+                border: 1px solid yellow;
+            }
+            &_title{
+                margin-top: 10px;
+                width: 55%;
+                height: 4ch;
+                font-size: small;
+
+                // border: 1px solid red;
+            }
+            &_banner{
+                width: 55%;
+                font-size: x-small;
+
+                // border: 1px solid greenyellow;
+            }
+            &_imgc{
+                position: relative;
+                // left: 0%;
+                margin-left: 21ch;
+                bottom: 5.5ch;
+                width: 10ch;
+                height: 10ch;
+                border-radius: 100%;
+                object-fit: fill;
+                overflow: hidden;
+            }
+        }
+        &_body{
+            // display: none;
+            // border: 1px solid green;
+            height: 70ch;
+
+            &_cp{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                // border: 1px solid blue;
+                &_container1{
+                    width: 80ch;
+                    // border: 1px solid red;
+                    &_c1{
+                        // display: none;
+                        width: 100%;
+                        height: 20ch;
+                        &_title{
+                            font-weight: 600;
+                            font-size: small;
+                        }
+                        &_banner{}
+                    }
+                }
+                &_details{
+                    // display: none;
+                    // height: fit-content;
+                    &_container{
+                        width: 98%;
+                        height: 5ch;
+                        font-size: x-small;
+                        border: 1px solid $secondary-color-2;
+                        background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                    }
+                }
+                &_paragraph{
+                    height: 20ch;
+                    font-size: 11px;
+                    overflow-y: scroll;
+                    border: 1px solid $secondary-color-2;
+                    background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                }
+            }
+
+            &_container2{
+                display: grid;
+                // border: 1px solid gold;
+                height: 40ch;
+                &_c2{
+                    width: 100%;
+                    height: 25ch;
+                    border-top: 1px solid $secondary-color-1;
+                    background: radial-gradient(circle, $primary-color-1, $primary-color-2);
+
+                    &_title{
+                        // display: none;
+                        width: 100%;
+                        height: 5vh;
+                        font-size: medium;
+                        background-color: rgba(252, 254, 255, 0.081);
+                    }
+                    &_banner{
+                        // display: none;
+                        width: 100%;
+                        height: 2vh;
+                    }
+                    &_child{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        // padding-left: 1ch;
+                        gap: 9ch;
+                        top: 3ch;
+                        // left: 1ch;
+                        width: 90%;
+                        height: 9ch;
+                        border: 1px solid $secondary-color-2;
+                        // margin-top: .3ch;
+                        background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+
+                        font-size: xx-small;
+                    }
+                    &_icons{
+                        margin-top: 40px;
+                        height: 7ch;
+                        width: 90%;
+                    }
+                    &_icons>*{
+                        margin: 1.4ch;
+                        width: 3.7ch;
+                        height: 3.7ch;
+                    }
+                    &_techs{
+                        width: 90%;
+                        height: 3ch;
+                    }
+                    &_techs>*{
+                        margin: 2ch;
+                        font-size: small;
+                        font-weight: 700;
+                    }
+                }
+            }
+            &_paragraph{
+                display: none;
+            }
+        }
+    }
+    #home_img{
+        position: relative;
+        right: 11.8ch;
+        bottom: 4.05ch;
+        width: 370px;
+        height: 230px;
+    }
+
+    // Resume Page Class
+    .resume{
+        margin: 0px;
+        background-image: url('../Media/StreetAlley1.jpg');
+        width: 100%;
+        &_container{
+            overflow: hidden;
+            height: 65ch;
+            &_doc{
+                // position: fixed;
+                width: 10ch;
+                height: 10ch;
+                top: 10ch;
+                // right: 40ch;
+                border: 3px solid #7676809d;
+                box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+            }
+            &_icons{
+                position: relative;
+                left: 0px;
+                width: 34ch;
+                height: 50ch;
+                background-image: url('../Media/OJ-Resume_1.jpg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: #7676800d;
+                box-shadow: 0px 0px 5px 5px rgba(6, 6, 6, 0.278);
+            }
+        }
+        &_title{
+            position: absolute;
+            top: 41px;
+            width: 55%;
+            height: 4ch;
+            font-size: small;
+        }
+        &_banner{
+            position: absolute;
+            top: 77px;
+            width: 55%;
+            font-size: x-small;
+        }
+    }
+    #res_box{
+        display: flex;
+        overflow: scroll;
+        width: 100%;
+        height: 60ch;
+        border: 1px solid red;
+    }
+    #resume_img{
+        display: none;
+        width: 10ch;
+        height: 10ch;
+    
+        margin-top: 1ch;
+        margin-left: 1ch;
+    }
+    #ac{
+        display: none;
+        position: relative;
+        bottom: 5ch;
+        right: 4ch;
+        width: 40ch;
+        height: 45ch;
+        // border: 1px solid orangered;
+    }
+    #dpi{
+        display: none;
+        position: relative;
+        width: 37ch;
+        height: 30ch;
+        // border: 1px solid orangered;
+    }
+    #gi{
+        display: none;
+        position: relative;
+        width: 30ch;
+        height: 30ch;
+    }
+    #rdi{
+        display: none;
+        position: relative;
+        width: 30ch;
+        height: 30ch;
+    }
+    
+    #game_icons{
+        display: none;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #icon_b1{
+        display: none;
+        position: relative;
+        margin-top: 2ch;
+        margin-left: 12ch;
+        width: 70%;
+        height: 70%;
+    
+        // display: grid;
+        // place-items: center;
+    }
+    #icon_b2{
+        display: none;
+        position: relative;
+        left: 15ch;
+        bottom: 18ch;
+        // border: 1px solid skyblue;
+        // display: grid;
+        // place-items: center;
+    }
+    #icon_b3{
+        display: none;
+        position: relative;
+        right: 1ch;
+        bottom: 10ch;
+        // border: 1px solid yellow;
+        // display: grid;
+        // place-items: center;
+    }
+    #icon_b4{
+        display: none;
+        position: relative;
+        bottom: 16ch;
+        right: 17ch;
+        // border: 1px solid purple;
+        // display: grid;
+        // place-items: center;
+    }
+
+    // Projects Page Class
+    .projects{
+        &_header{
+            // border: 1px solid greenyellow;
+            background-image: url('../Media/ChinaTown\(Night\).jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 10ch;
+            &_title{
+                position: absolute;
+                top: 15px;
+                width: 55%;
+                height: 4ch;
+                font-size: small;
+            }
+            &_banner{
+                position: absolute;
+                top: 77px;
+                // top: 10px;
+                width: 55%;
+                font-size: x-small;
+            }
+            &_img{
+                position: relative;
+                left: 65%;
+                top: 0.6ch;
+                width: 8ch;
+                height: 8ch;
+            }
+        }
+        &_body{
+            &_child{
+                overflow-x: scroll;
+                overflow-y: hidden;
+                // border: 1px solid gold;
+                width: 100%;
+                &_container{
+                    width: 80ch;
+                    // border: 1px solid red;
+                    display: flex;
+                    &_c1{
+                        height: 20ch;
+                        width: 100%;
+                        &_title{
+                            font-weight: 600;
+                            font-size: small;
+                        }
+                        &_banner{}
+                    }
+                }
+                &_details{
+                    &_container{
+                        width: 98%;
+                        height: 5ch;
+                        font-size: x-small;
+                        display: flex;
+                        border: 1px solid $secondary-color-2;
+                        background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                    }
+                }
+                &_paragraph{
+                    height: 20ch;
+                    font-size: 11px;
+                    overflow-y: scroll;
+                    border: 1px solid $secondary-color-2;
+                    background: linear-gradient(to right, rgb(23, 23, 23), rgb(52, 52, 52));
+                }
+            }
+        }
+    }
+    .diff{
+        width: 75px;
+    }
+
+    // Footer Class
+    .foot{
+        margin-top: 1px;
+        // border: 1px solid blue;
+        overflow: hidden;
+        width: 100%;
+        height: 13ch;
+
+        &_icon{
+            width: 7ch;
+            height: 7ch;
+        }
+        &_icons{
+            width: 15ch;
+            height: 4ch;
+            gap: 9px;
+        }
+        &_text{
+            display: none;
+            margin-top: 2px;
+            width: 100%;
+
+            &_child1{
+                font-size: x-small;
+            }
+            &_child2{
+                font-size: x-small;
+                left: 0ch;
+            }
+        }
+
+    }
+
+    // ID's
+    #vid{
+        width: 100%;
+        height: 230px;
+    }
+    #ec_2{
+        margin-left: 10px;
+    }
+    #ec_3{
+        margin-left: 20px;
+    }
+    #js_text{
+        position: relative;
+        right: 13px;
+    }
+    #py_icon{
+        position: relative;
+        left: 9px;
+    }
+    #j_icon{
+        position: relative;
+        left: 15px;
+    }
+    #j_text{
+        position: relative;
+        right: 25px;
+    }
+    #c_icon{
+        position: relative;
+        left: 10px;
+        // right: 25px;
+    }
+    #c_text{
+        position: relative;
+        right: 20px;
+    }
+    #star_box>*{
+        width: 3ch;
+        height: 3ch;
+    }
+
+}
